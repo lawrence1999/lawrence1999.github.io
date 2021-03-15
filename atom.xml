@@ -18,8 +18,8 @@
   
   <entry>
     <title>next的坑</title>
-    <link href="http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91/"/>
-    <id>http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91/</id>
+    <link href="http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/"/>
+    <id>http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/</id>
     <published>2021-03-15T07:31:28.000Z</published>
     <updated>2021-03-15T08:53:32.761Z</updated>
     
@@ -62,11 +62,11 @@
     <category term="安装与使用" scheme="http://liurenyu.org/categories/%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     
     
-    <category term="next" scheme="http://liurenyu.org/tags/next/"/>
-    
     <category term="hexo" scheme="http://liurenyu.org/tags/hexo/"/>
     
     <category term="教程" scheme="http://liurenyu.org/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="next" scheme="http://liurenyu.org/tags/next/"/>
     
   </entry>
   

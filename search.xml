@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>archives</title>
-    <url>/2021/03/15/archives/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>hexo教程</title>
     <url>/2021/03/15/hexo%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h3 id="记录个人blog的第一篇文章"><a href="#记录个人blog的第一篇文章" class="headerlink" title="记录个人blog的第一篇文章!"></a>记录个人blog的第一篇文章!</h3><h4 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h4><p>对于hexo +github +aliyun的相关配置,主要参考了是<a href="https://zhuanlan.zhihu.com/p/26625249">hexo+github配置个人网页</a>这篇文章,还有<strong>如何把本地文件夹也存放在github的另外一个branch</strong>这个问题先暂时留着,日后解决.</p>

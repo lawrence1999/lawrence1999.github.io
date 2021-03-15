@@ -56,7 +56,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
@@ -127,7 +127,16 @@
 
 <!-- 网页加载条 -->
 <script src="https://neveryu.github.io/js/src/pace.min.js"></script>
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
   <title>归档 | Blog for LiuRenyu</title>
   
 
@@ -503,12 +512,13 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Liu Renyu</span>
-
+<!--
   
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
@@ -519,8 +529,7 @@
     
     <span title="Site words total count">681</span>
   
-</div>
-<!--
+
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -535,6 +544,25 @@
 
 
 -->
+<!-- 不蒜字统计 -->
+<div>
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	  访问人数：<span id="busuanzi_value_site_uv"></span>
+	</span>&nbsp;|&nbsp;
+	
+	<i class="fa fa-eye"></i>
+	<span id="busuanzi_container_site_pv">
+	  总访问量：<span id="busuanzi_value_site_pv"></span>
+	</span>&nbsp;|&nbsp;
+	
+	<!-- 添加博客全站总字数统计-->
+	<i class="fa fa-pencil"></i>
+	<span class="post-count">博客全站共 681 字</span>
+</div>
+	
+
+
         
 
 

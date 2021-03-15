@@ -62,11 +62,11 @@
     <category term="安装与使用" scheme="http://liurenyu.org/categories/%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     
     
-    <category term="next" scheme="http://liurenyu.org/tags/next/"/>
-    
     <category term="hexo" scheme="http://liurenyu.org/tags/hexo/"/>
     
     <category term="教程" scheme="http://liurenyu.org/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="next" scheme="http://liurenyu.org/tags/next/"/>
     
   </entry>
   

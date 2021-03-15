@@ -83,7 +83,7 @@
 
 <meta name="description" content="不得不说,next这个hexo主题是在是太坑了,官方文档写的也有些问题. 关于next主题中的菜单配置,我参考了官方文档,前面的一些配置都没有问题,但直到到了这里: 1234567menu:  home: &#x2F;  archives: &#x2F;archives  #about: &#x2F;about  #categories: &#x2F;categories  tags: &amp;#x2F">
 <meta property="og:type" content="article">
-<meta property="og:title" content="next的坑">
+<meta property="og:title" content="next图标显示问题&#x2F;页面问题">
 <meta property="og:url" content="http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/index.html">
 <meta property="og:site_name" content="Blog for LiuRenyu">
 <meta property="og:description" content="不得不说,next这个hexo主题是在是太坑了,官方文档写的也有些问题. 关于next主题中的菜单配置,我参考了官方文档,前面的一些配置都没有问题,但直到到了这里: 1234567menu:  home: &#x2F;  archives: &#x2F;archives  #about: &#x2F;about  #categories: &#x2F;categories  tags: &amp;#x2F">
@@ -91,7 +91,7 @@
 <meta property="og:image" content="http://liurenyu.org/images/menuquestion_1.png">
 <meta property="og:image" content="http://liurenyu.org/images/menuquestion_2.png">
 <meta property="article:published_time" content="2021-03-15T07:31:28.000Z">
-<meta property="article:modified_time" content="2021-03-15T08:53:32.761Z">
+<meta property="article:modified_time" content="2021-03-15T13:05:13.352Z">
 <meta property="article:author" content="Liu Renyu">
 <meta property="article:tag" content="next">
 <meta name="twitter:card" content="summary">
@@ -142,7 +142,7 @@
         }
     })();
 </script>
-  <title>next的坑 | Blog for LiuRenyu</title>
+  <title>next图标显示问题/页面问题 | Blog for LiuRenyu</title>
   
 
 
@@ -320,7 +320,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">next的坑</h1>
+          <h1 class="post-title" itemprop="name headline">next图标显示问题/页面问题</h1>
         
 
         <div class="post-meta">
@@ -367,6 +367,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -427,6 +437,8 @@
 <p>关于<code>next</code>主题中的菜单配置,我参考了<a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html#menu-settings">官方文档,</a>前面的一些配置都没有问题,但直到到了这里:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F;</span><br><span class="line">  archives: &#x2F;archives</span><br><span class="line">  #about: &#x2F;about</span><br><span class="line">  #categories: &#x2F;categories</span><br><span class="line">  tags: &#x2F;tags</span><br><span class="line">  #commonweal: &#x2F;404.html</span><br></pre></td></tr></table></figure>
 
+<span id="more"></span>
+
 <p>当我把<code>主题配置文件</code>这么改了之后,我发现,这些图标怎么都变成了<code>?</code></p>
 <p><img src="/images/menuquestion_1.png"></p>
 <p>在一番查询之后发现,在<code>主题配置文件中</code>,它原来是这样的:</p>
@@ -452,7 +464,49 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
 
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt=" 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Liu Renyu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/" title="next图标显示问题/页面问题">http://liurenyu.org/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -499,6 +553,12 @@
 
     <div class="post-spread">
       
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
     </div>
   </div>
 
@@ -509,6 +569,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -829,6 +892,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'mVaYJoNEXRWSWstfahKtwEaz-gzGzoHsz',
+        appKey: 'kvMn7xy25uFl0BTqCXYe3LkG',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

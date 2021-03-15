@@ -318,7 +318,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/" itemprop="url">next的坑</a></h1>
+                <a class="post-title-link" href="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/" itemprop="url">next图标显示问题/页面问题</a></h1>
         
 
         <div class="post-meta">
@@ -365,6 +365,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -422,11 +432,9 @@
 
       
         
-          
-          不得不说,next这个hexo主题是在是太坑了,官方文档写的也有些问题.
-关于next主题中的菜单配置,我参考了官方文档,前面的一些配置都没有问题,但直到到了这里:
-1234567menu:  home: &#x2F;  archives: &#x2F;archives  #about: &#x2F;about  #categories: &#x2F;categories  tags: &#x2F
-          ...
+          <p>不得不说,<code>next</code>这个<code>hexo</code>主题是在是太坑了,官方文档写的也有些问题.</p>
+<p>关于<code>next</code>主题中的菜单配置,我参考了<a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html#menu-settings">官方文档,</a>前面的一些配置都没有问题,但直到到了这里:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F;</span><br><span class="line">  archives: &#x2F;archives</span><br><span class="line">  #about: &#x2F;about</span><br><span class="line">  #categories: &#x2F;categories</span><br><span class="line">  tags: &#x2F;tags</span><br><span class="line">  #commonweal: &#x2F;404.html</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2021/03/15/next%E7%9A%84%E5%9D%91-2021-03-15/#more" rel="contents">
@@ -547,6 +555,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/03/15/hexo%E6%95%99%E7%A8%8B/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/03/15/hexo%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -603,7 +621,7 @@
 
       
         
-          <h3 id="记录个人blog的第一篇文章"><a href="#记录个人blog的第一篇文章" class="headerlink" title="记录个人blog的第一篇文章!"></a>记录个人blog的第一篇文章!</h3><h4 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h4><p>对于hexo +github +aliyun的相关配置,主要参考了是<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">hexo+github配置个人网页</a>这篇文章,还有<strong>如何把本地文件夹也存放在github的另外一个branch</strong>这个问题先暂时留着,日后解决.</p>
+          <h4 id="记录个人blog的第一篇文章"><a href="#记录个人blog的第一篇文章" class="headerlink" title="记录个人blog的第一篇文章!"></a>记录个人blog的第一篇文章!</h4><h4 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h4><p>对于hexo +github +aliyun的相关配置,主要参考了是<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26625249">hexo+github配置个人网页</a>这篇文章,还有<strong>如何把本地文件夹也存放在github的另外一个branch</strong>这个问题先暂时留着,日后解决.</p>
 <h4 id="hexo的命令"><a href="#hexo的命令" class="headerlink" title="hexo的命令"></a>hexo的命令</h4><p>hexo的命令很简单,常见的如:</p>
 <p><code>hexo+s</code>可以再本地<code>localhost:4000</code>预览</p>
 <p><code>hexo d -g</code>可以部署到网页中,其中<code>d -g</code>是<code>deploy generate</code>的缩写</p>
@@ -971,6 +989,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'mVaYJoNEXRWSWstfahKtwEaz-gzGzoHsz',
+        appKey: 'kvMn7xy25uFl0BTqCXYe3LkG',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

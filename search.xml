@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>next的坑</title>
+    <url>/2021/03/15/next%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<p>不得不说,<code>next</code>这个<code>hexo</code>主题是在是太坑了,官方文档写的也有些问题.</p>
+<p>关于<code>next</code>主题中的菜单配置,我参考了<a href="https://theme-next.iissnan.com/getting-started.html#menu-settings">官方文档,</a>前面的一些配置都没有问题,但直到到了这里:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F;</span><br><span class="line">  archives: &#x2F;archives</span><br><span class="line">  #about: &#x2F;about</span><br><span class="line">  #categories: &#x2F;categories</span><br><span class="line">  tags: &#x2F;tags</span><br><span class="line">  #commonweal: &#x2F;404.html</span><br></pre></td></tr></table></figure>
+
+<p>当我把<code>主题配置文件</code>这么改了之后,我发现,这些图标怎么都变成了<code>?</code></p>
+<p><img src="../images/menuquestion_1.png"></p>
+<p>在一番查询之后发现,在<code>主题配置文件中</code>,它原来是这样的:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  #categories: &#x2F;categories&#x2F; || th</span><br><span class="line">  #tags: &#x2F;tags&#x2F; || tags</span><br><span class="line">  #about: &#x2F;about || user</span><br><span class="line">  #schedule: &#x2F;schedule&#x2F; || calendar</span><br><span class="line">  #sitemap: &#x2F;sitemap.xml || sitemap</span><br><span class="line">  #commonweal: &#x2F;404&#x2F; || heartbeat</span><br></pre></td></tr></table></figure>
+
+<p>没错,再根据上面的英文提示:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Usage: &#96;Key: &#x2F;link&#x2F; || icon&#96;</span><br><span class="line"># Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.</span><br><span class="line"># Value before &#96;||&#96; delimeter is the target link.</span><br><span class="line"># Value after &#96;||&#96; delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.</span><br></pre></td></tr></table></figure>
+
+<p>原来||后面的是图标的样式,那我便把他加上就是了,但是当我点击图标的时候,又变成了这样:</p>
+<p><img src="../images/menuquestion_2.png"></p>
+<p>页面一片空白,只有这几个字,这问题怎么解决呢?</p>
+<p><em><strong>重点来了!!!</strong></em></p>
+<p><em><strong>重点来了!!!</strong></em></p>
+<p>在每行的<code>categories: /categories/ || th</code>中,需要把<code>||</code>前面的<strong>空格</strong>去掉,变成<code>categories: /categories/|| th</code>,就可以完美运行了.</p>
+<p>对于next主题的一些其他配置,可以参考:<a href="https://blog.csdn.net/u012195214/article/details/79204088">next主题优化</a></p>
+]]></content>
+      <categories>
+        <category>安装与使用</category>
+      </categories>
+      <tags>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo教程</title>
     <url>/2021/03/15/hexo%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h3 id="记录个人blog的第一篇文章"><a href="#记录个人blog的第一篇文章" class="headerlink" title="记录个人blog的第一篇文章!"></a>记录个人blog的第一篇文章!</h3><h4 id="hexo配置"><a href="#hexo配置" class="headerlink" title="hexo配置"></a>hexo配置</h4><p>对于hexo +github +aliyun的相关配置,主要参考了是<a href="https://zhuanlan.zhihu.com/p/26625249">hexo+github配置个人网页</a>这篇文章,还有<strong>如何把本地文件夹也存放在github的另外一个branch</strong>这个问题先暂时留着,日后解决.</p>
@@ -25,9 +55,9 @@
         <category>安装与使用</category>
       </categories>
       <tags>
+        <tag>next</tag>
         <tag>hexo</tag>
         <tag>教程</tag>
-        <tag>next</tag>
       </tags>
   </entry>
 </search>
